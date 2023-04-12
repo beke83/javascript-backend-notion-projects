@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="product">
       <div className="product-container">
-        <div className='product-image-container'>
+      
           <img src='./assets/images/image-product-desktop.jpg' className="product-image" alt="" />
-        </div>
+       
         <div className='product-desc'>
           <p>Perfume</p>
           <h3>Gabrielle Essence Eau De Parfum</h3>
