@@ -1,6 +1,7 @@
 .product {
   background-color: rgb(231, 230, 221);
   min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +10,8 @@
 .product-container {
   display: flex;
   flex-direction: row;
+  padding: 30px 0px;
 }
-
-.product-image-container{
-  height: 60vh;
-}
-
 .product-image {
   height: 60vh;
   border-radius: 10px 0px 0px 10px;
@@ -26,47 +23,108 @@
   background-color: #fff;
   border-radius: 0px 10px 10px 0px;
   width: 250px;
-  padding: 10px 35px 0px 28px;
+  /* padding: 10px 35px 0px 30px; */
+  padding: 0px 35px;
 }
 
-.product-desc>p{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.product-desc > p {
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
-.product-desc>h3 {
-  font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.product-desc > h3 {
+  font-size: 35px;
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-family: 'Source Serif Pro', serif;
 }
 
-.product-desc>h6 {
-  font-size: 16px;
+.product-desc > h6 {
+  font-size: 15px;
   max-width: 600px;
-  color: gray
+  color: gray;
+  line-height: 25px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-family: 'Noto Sans Miao', sans-serif;
 }
 
-.product-desc>h4 {
+.product-desc > h4 {
   display: flex;
   align-items: center;
   font-size: 30px;
   color: rgb(38, 141, 38);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lobster Two', cursive;
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 35px;
 }
-.product-desc>h4>span {
+.product-desc > h4 > span {
   font-size: 16px;
   padding-left: 20px;
   color: rgb(177, 175, 175);
   text-decoration: line-through;
+  font-family: 'Lobster Two', cursive;
 }
 
 .add-btn {
-  border-radius: 5px;
-  padding: 15px 20px;
+  border-radius: 10px;
+  padding: 13px 20px;
   color: #fff;
   background-color: rgb(0, 48, 0);
   border: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Sans Miao', sans-serif;
+  font-weight: bold;
   font-size: 15px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    display: flex;
+    align-content: flex-start;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-image {
+    border-radius: 10px 0px 0px 10px;
+    width: 100%;
+  }
+  .product-desc {
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    width: fit-content;
+    padding: 0px 35px 30px;
+  }
+  .product-desc > h3 {
+    font-size: 35px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: 'Source Serif Pro', serif;
+  }
+  .add-btn {
+    border-radius: 10px;
+    padding: 13px 20px;
+    color: #fff;
+    background-color: rgb(0, 48, 0);
+    border: none;
+    font-family: 'Noto Sans Miao', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 }
